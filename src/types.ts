@@ -1,5 +1,8 @@
-export interface Task {
-  id:        number
-  title:     string
-  completed: boolean
+export interface MessagePayload {
+  message: string;
+  key: string;
+}
+
+export interface ApiResponse {
+  result: string;
 }

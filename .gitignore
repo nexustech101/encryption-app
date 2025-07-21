@@ -9,7 +9,7 @@ lerna-debug.log*
 
 node_modules
 task_api
-encryption_api
+encryption_api/venv
 dist
 dist-ssr
 *.local
