@@ -1,25 +1,11 @@
-// src/App.tsx
 import React from "react";
+import CryptoForm from "./components/CryptoForm";
 
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./pages/NavBar";
-import Home from "./pages/Home";
-import Tasks from "./pages/Tasks";
-import About from "./pages/About";
-import CrudApp from "./pages/CrudApp";
-
-const App: React.FC = () => {
+const App = () => {
   return (
-    <div className='App'>
-      <Router>
-        <Navbar />
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/tasks' element={<Tasks />} />
-          <Route path='/about' element={<About />} />
-          <Route path='/crud' element={<CrudApp />} />
-        </Routes>
-      </Router>
+    <div className='container py-5'>
+      <h1 className='text-center mb-4'>AES CBC Encryption App</h1>
+      <CryptoForm />
     </div>
   );
 };
